@@ -1,35 +1,99 @@
 site_name: Learning the Society
+site_description: Learning the Society 认知社会
+site_author: AlanBook
+
 theme:
     name: material
-    feature:
-        - navigation.tabs
-        - navigation.sections
-        - toc.integrate
+    features:
+        #- navigation.tabs
+        #- navigation.tabs.sticky
         - navigation.top
+        #- navigation.footer
+        - navigation.tracking
+
+        - header.autohide
+
         - search.suggest
         - search.highlight
+        - search.share
+
+        #- toc.integrate
+        - toc.follow
         - content.tabs.link
-        - content.code.annotation
-        - content.code.copy
-    langauge: en
+        #- content.code.annotate
+        #- content.code.copy
+    langauge: zh
     palette:
-      - scheme: default
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
         toggle:
-           icon: material/toggle-switch-off-outline
+           icon: material/brightness-7
            name: Switch to dark mode
-        accent: purple
-      - scheme: slate
+        accent: deep orange
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
         toggle:
-           icon: material/toggle-switch
+           icon: material/brightness-4
            name: Switch to light mode
         accent: lime
+    icon:
+      repo: fontawesome/brands/git-alt
+    font:
+      text: Noto Serif Simplified Chinese
 
 extra:
     social:
       - icon: fontawesome/brands/github-alt
         link: https://github.com/AlanBook
-          
+    #alternate:
+      #- name: 简体中文
+      #  link: /zh/
+      #  lang: zh
+      #- name: English
+      #  link: /en/
+      #  lang: en
+    analytics:
+      feedback:
+        title: Was this page helpful?
+        ratings:
+          - icon: material/emoticon-happy-outline
+            name: This page was helpful
+            data: 1
+            note: >-
+              Thanks for your feedback!
+          - icon: material/emoticon-sad-outline
+            name: This page could be improved
+            data: 0
+            note: >- 
+              Thanks for your feedback! Help us improve this page by
+              using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
+
 copyright:
-  Copyright © 2023 <a href="https://github.com/AlanBook" target="_blank" rel="noopenner">AlanBook</a>
+  Copyright © 2023 <a href="https://github.com/AlanBook" target="_blank" rel="noopener">AlanBook</a>
         
-        
+repo_url: https://github.com/AlanBook/Society_learning
+repo_name: AlanBook/Society_learning
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - footnotes
+  - toc:
+      title: On this page
+
+plugins:
+  - search:
+      #lang:
+      #  - en
+      #  - zh
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+
+nav:
+  - 前言: "index.md"
+  - Fdu大学生存:
+      - Fdu大一新生 部分生存指南: "Fdu大学生存/freshman.md"
+  - 认知社会:
+      - 社会学: "认知社会/sociology.md"
+  - 信息导航集合:
+      - 学习导航: "信息导航集合/learning.md"
