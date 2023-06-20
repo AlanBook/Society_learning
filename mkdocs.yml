@@ -38,8 +38,8 @@ theme:
         accent: lime
     icon:
       repo: fontawesome/brands/git-alt
-    font:
-      text: Noto Serif Simplified Chinese
+    #font:
+    #  text: Noto Serif Simplified Chinese
 
 extra:
     social:
@@ -80,14 +80,8 @@ markdown_extensions:
   - md_in_html
   - footnotes
   - toc:
-      title: On this page
+      title: 本页目录
 
-plugins:
-  - search:
-      #lang:
-      #  - en
-      #  - zh
-      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 
 nav:
   - 前言: "index.md"
@@ -97,3 +91,6 @@ nav:
       - 社会学: "认知社会/sociology.md"
   - 信息导航集合:
       - 学习导航: "信息导航集合/learning.md"
+      #- 收藏夹: "favorites_2023_6_18.html"
+  - 出行游逛:
+      - 上海可逛: "出行游逛/tours.md"
