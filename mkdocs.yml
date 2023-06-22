@@ -89,8 +89,11 @@ nav:
       - Fdu大一新生 部分生存指南: "Fdu大学生存/freshman.md"
   - 认知社会:
       - 社会学: "认知社会/sociology.md"
+
   - 信息导航集合:
       - 学习导航: "信息导航集合/learning.md"
       #- 收藏夹: "favorites_2023_6_18.html"
   - 出行游逛:
       - 上海可逛: "出行游逛/tours.md"
+  - 歌声合成领域:
+      - 传统虚拟歌声合成: "歌声合成领域/voicesynth.md"
