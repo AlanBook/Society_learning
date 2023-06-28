@@ -10,7 +10,7 @@ theme:
         - navigation.top
         #- navigation.footer
         - navigation.tracking
-
+        - navigation.expand
         - header.autohide
 
         - search.suggest
@@ -85,15 +85,11 @@ markdown_extensions:
 
 nav:
   - 前言: "index.md"
-  - Fdu大学生存:
-      - Fdu大一新生 部分生存指南: "Fdu大学生存/freshman.md"
-  - 认知社会:
+  - 宏观 - 认知:
       - 社会学: "认知社会/sociology.md"
-
-  - 信息导航集合:
+  - 中观 - 衔接:
+      - Fdu大一新生 部分生存指南: "Fdu大学生存/freshman.md"
       - 学习导航: "信息导航集合/learning.md"
-      #- 收藏夹: "favorites_2023_6_18.html"
-  - 出行游逛:
-      - 上海可逛: "出行游逛/tours.md"
-  - 歌声合成领域:
-      - 传统虚拟歌声合成: "歌声合成领域/voicesynth.md"
+  - 微观 - 个人:
+      - 上海出行游逛: "出行游逛/tours.md"
+      - 歌声合成领域: "歌声合成领域/voicesynth.md"
